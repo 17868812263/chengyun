@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chengyun.chengyun.mapper.ApiMapper">
+    <select id="whcljbxx"  resultType="java.util.LinkedHashMap">
+       select
+  id,
+  plateNumber,
+  cargoType,
+  driverName,
+  supercargoName,
+  shipperAddress,
+  deliverAddress,
+  vehicleType,
+  ratedTonnage,
+  ownedName,
+  businessScope,
+  businessLicense from cy_whcljb_data;
+    </select>
+</mapper>
